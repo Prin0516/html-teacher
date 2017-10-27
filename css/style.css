@@ -2,13 +2,40 @@
     margin:0;
     padding:0;
 }
+.inner{
+    max-width:940px;
+    padding-left:10px;
+    padding-right:10px;
+    margin:0 auto;
+}
+.inner:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+#gnav{
+    background-color: rgb(92, 193, 175);
+
+}
+#gnav ul{
+    overflow:hidden;
+}
+#gnav li{
+    float:left;
+    width:25%;
+}
+#gnav a{
+    display:block;
+    color:rgba(255,255,255,0.5);
+    text-decoration:none;
+}
+#gnav a:hover{
+    color:white;
+}
 /*body{
     max-width:1100px;
     height:auto;
 }*/
  #header{
     /* max-width:80%;*/
- }
- h1{
-
  }
