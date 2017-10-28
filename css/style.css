@@ -1,41 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 *{
     margin:0;
     padding:0;
 }
 .inner{
-    max-width:940px;
+    max-width:1140px;
     padding-left:10px;
     padding-right:10px;
     margin:0 auto;
+    
 }
 .inner:after{
     content:'';
     display:block;
     clear:both;
+    
 }
-#gnav{
-    background-color: rgb(92, 193, 175);
 
-}
-#gnav ul{
+#gnav {
+    float:right;
     overflow:hidden;
+    list-style-type:none;
+    margin:5px;
 }
 #gnav li{
     float:left;
-    width:25%;
+    margin:20px 20px;
+    text-align:center;
+}
+#gnav li:last-child{
+    margin:10px 10px;
 }
 #gnav a{
     display:block;
-    color:rgba(255,255,255,0.5);
+    color:rgba(255,255,255,0.8);
+/*    font-family: 'Indie Flower', cursive;*/
+    font-family: 'Comfortaa', cursive;
     text-decoration:none;
+    font-size:120%;
+    text-align:center;
 }
+#last a{
+     border: rgba(255, 255, 255,0.8) 3px solid ;
+     border-radius:0.3em;
+     padding:10px 10px;
+     margin:0 5px;
+    
+ }
+
 #gnav a:hover{
     color:white;
+
 }
-/*body{
-    max-width:1100px;
-    height:auto;
-}*/
+#last a:hover{
+    color:white;
+    border: rgb(255, 255, 255) 3px solid ;
+    border-radius:0.3em;
+}
  #header{
-    /* max-width:80%;*/
+     background-color: rgba(92, 193, 175,0.6);
+     height:300px;
+     position: relative;
+     margin:0 -10px;
  }
+ #header h1{
+     position: absolute;
+     top:40%;
+     left:20%;
+     color: rgba(255, 184, 87, 0.77);
+     font-family: 'Comfortaa', cursive;
+     font-size:350%;
+ }
+#img{
+    background:url(../book.jpg) right top no-repeat;
+    height:300px;
+    margin:20px auto;
+    background-size:cover;
+    
+}
