@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>許健教授's web</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+$(function() {
+    $.get('update.php?id=1',{r:Math.random()},function(num) {
+        $('#hit').html(num);    
+    });
+});
+</script>
 </head>
 <body>
 <div id="img" class="inner">
@@ -14,7 +21,7 @@
         <li><a href="about.html">About</a> </li>
         <li id="last"><a href="contant.html" >Contact</a> </li>
     </ul>
-    <h1>shiu  jian</h1>
+    <h1>Shiu Jian's Web</h1>
     <!--<dl id="info">-->
         <!--<dt>Tel:</dt>-->
         <!--<dd> +886-4-23323456 ext. 1813</dd>-->
@@ -23,6 +30,13 @@
     <!--</dl>-->
     </header>
     </div>
+    <script src="count.php?id=1"></script>
+    <div id="hit"></div>
+<footer id="footer" class="inner">
+
+
+    <p></p>
+    </footer>
 
 </body>
 </html>
