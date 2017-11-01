@@ -106,9 +106,6 @@ div{
 }
 
 #gnav {
-    float:right;
-    overflow:hidden;
-
     margin:5px;
 }
 #gnav li{
@@ -116,9 +113,9 @@ div{
     margin:20px 20px;
     text-align:center;
 }
-#gnav li:last-child{
-    margin:10px 10px;
-}
+/*#gnav li:last-child{*/
+    /*margin:10px 10px;*/
+/*}*/
 #gnav a{
     display:block;
     color:rgba(255,255,255,0.8);
@@ -128,33 +125,33 @@ div{
     font-size:120%;
     text-align:center;
 }
-#last a{
-    border: rgba(255, 255, 255,0.8) 3px solid ;
-    border-radius:0.3em;
-    padding:10px 10px;
-    margin:0 5px;
+/*#last a{*/
+    /*border: rgba(255, 255, 255,0.8) 3px solid ;*/
+    /*border-radius:0.3em;*/
+    /*padding:10px 10px;*/
+    /*margin:0 5px;*/
 
-}
+/*}*/
 
 #gnav a:hover{
     color:white;
 
 }
-#last a:hover{
-    color:white;
-    border: rgb(255, 255, 255) 3px solid ;
-    border-radius:0.3em;
-}
+/*#last a:hover{*/
+    /*color:white;*/
+    /*border: rgb(255, 255, 255) 3px solid ;*/
+    /*border-radius:0.3em;*/
+/*}*/
 #header{
     background-color: rgba(92, 193, 175,0.7);
     height:300px;
-    position: relative;
+    /*position: relative;*/
     margin:0 -10px;
 }
 #header h1{
-    position: absolute;
-    top:40%;
-    left:20%;
+    /*position: absolute;*/
+    /*top:40%;*/
+    /*left:20%;*/
     color: rgba(255, 184, 87, 0.77);
     font-family: 'Comfortaa', cursive;
     font-size:300%;
@@ -164,9 +161,26 @@ div{
     height:300px;
     margin:10px auto;
     background-size:cover;
-
 }
-
+#main{
+    height:50px;
+    background-color: rgba(193, 179, 129, 0.7);
+    border:rgba(193, 179, 129, 0.7) 1px solid;
+    border-radius:10px;
+    padding:0 20px;
+}
+#main li{
+    margin:0 10px;
+    width:17%;
+}
+#main a{
+    display:block;
+    font-family: 'Comfortaa', cursive;
+    font-size:2em;
+}
+#main a:hover{
+    background-color: #ffab5c;
+}
 #footer{
     height: 300px;
 }
@@ -176,6 +190,6 @@ div{
     width: 500px;
 }
 #date{
-    width:50px;
+    width:200px;
     height:auto;
 }

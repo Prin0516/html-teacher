@@ -5,7 +5,7 @@ ul, li { list-style: none; }
 
 .calendar {
   display: none;
-  width: 200px;
+  width: 50px;
   padding: 10px;
   margin: 20px auto 0;
   background-color: #fafafa;
@@ -13,9 +13,9 @@ ul, li { list-style: none; }
 }
 .calendar-title {
   position: relative;
-  height: 20px;
-  line-height: 20px;
-  padding: 5px 0;
+  height: 10px;
+  line-height: 10px;
+  padding: 3px 0;
 }
 .calendar-title a.title {
   display: inline-block;
@@ -24,8 +24,8 @@ ul, li { list-style: none; }
 }
 #backToday {
   position: absolute;
-  left: 70%;
-  top: 8px;
+  left: 35%;
+  top: 4px;
   width: 20px;
   height: 20px;
   line-height: 20px;
@@ -33,7 +33,7 @@ ul, li { list-style: none; }
   border-radius: 50%;
   color: #fff;
   background-color: rgb(255, 128, 142);
-  font-size: 18px;
+  font-size: 9px;
 }
 .calendar-title .arrow {
   position: absolute;
@@ -43,7 +43,7 @@ ul, li { list-style: none; }
 }
 .calendar-title .arrow span {
   color: #ddd;
-  font-size: 26px;
+  font-size: 22px;
   cursor: pointer;
 
   -webkit-user-select: none;
@@ -68,9 +68,9 @@ ul, li { list-style: none; }
 .calendar-week .item,
 .calendar-date .item {
   float: left;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
   text-align: center;
 }
 .calendar-week {
@@ -101,17 +101,17 @@ ul, li { list-style: none; }
   display: none;
   opacity: 0;
   position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 90px;
-  height: 48px;
+  right: 10px;
+  top: 10px;
+  width: 45px;
+  height: 24px;
   padding: 6px 10px;
   background-color: rgb(255, 128, 142);
   border-radius: 5px;
 }
 .calendar-today .triangle {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: -16px;
   margin-top: -8px;
   border-width: 8px;
