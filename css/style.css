@@ -170,3 +170,12 @@ div{
 #footer{
     height: 300px;
 }
+
+.flipTimer {
+    margin: 100px auto 0;
+    width: 500px;
+}
+#date{
+    width:50px;
+    height:auto;
+}
