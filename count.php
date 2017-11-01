@@ -1,9 +1,9 @@
 <meta charset="UTF-8">
-<?php $(function() {
-    $.get('update.php?id=1',{r:Math.random()},function(num) {
-        $('#hit').html(num);    
-    });
-});
+<?php //$(function() {
+//    $.get('update.php?id=1',{r:Math.random()},function(num) {
+//        $('#hit').html(num);
+//    });
+//});
 //$action=$_GET['action']; 
 //echo '<p>Hello World</p>';
 //$datei = fopen("countlog.txt","r");
