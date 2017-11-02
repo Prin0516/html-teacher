@@ -92,66 +92,27 @@ div{
     padding:0;
 }
 .inner{
-    max-width:1140px;
-    padding-left:10px;
-    padding-right:10px;
+    width:1140px;
     margin:0 auto;
+    overflow: hidden;
 
 }
 .inner:after{
     content:'';
     display:block;
     clear:both;
-
 }
-
-#gnav {
-    margin:5px;
-}
-#gnav li{
-    float:left;
-    margin:20px 20px;
-    text-align:center;
-}
-/*#gnav li:last-child{*/
-    /*margin:10px 10px;*/
-/*}*/
-#gnav a{
-    display:block;
-    color:rgba(255,255,255,0.8);
-    /*    font-family: 'Indie Flower', cursive;*/
-    font-family: 'Comfortaa', cursive;
-    text-decoration:none;
-    font-size:120%;
-    text-align:center;
-}
-/*#last a{*/
-    /*border: rgba(255, 255, 255,0.8) 3px solid ;*/
-    /*border-radius:0.3em;*/
-    /*padding:10px 10px;*/
-    /*margin:0 5px;*/
-
-/*}*/
-
-#gnav a:hover{
-    color:white;
-
-}
-/*#last a:hover{*/
-    /*color:white;*/
-    /*border: rgb(255, 255, 255) 3px solid ;*/
-    /*border-radius:0.3em;*/
-/*}*/
+/*頁頭*/
 #header{
-    background-color: rgba(92, 193, 175,0.7);
+    background-color:rgba(92, 193, 175, 0.46);
     height:300px;
-    /*position: relative;*/
-    margin:0 -10px;
+    position: relative;
+    margin:auto;
 }
 #header h1{
-    /*position: absolute;*/
-    /*top:40%;*/
-    /*left:20%;*/
+    position: absolute;
+    top:40%;
+    left:30%;
     color: rgba(255, 184, 87, 0.77);
     font-family: 'Comfortaa', cursive;
     font-size:300%;
@@ -162,25 +123,80 @@ div{
     margin:10px auto;
     background-size:cover;
 }
-#main{
-    height:50px;
-    background-color: rgba(193, 179, 129, 0.7);
-    border:rgba(193, 179, 129, 0.7) 1px solid;
-    border-radius:10px;
-    padding:0 20px;
+#header ul{
+    float:right;
+    margin:30px 20px;
+    font-size:1.5em;
 }
-#main li{
+#header li{
+    display:inline;
     margin:0 10px;
-    width:17%;
 }
-#main a{
+#header a{
+    color:rgba(255,255,255,0.7);
+    border: rgba(255, 255, 255,0.6) 3px solid ;
+    border-radius:0.3em;
+    padding:10px 10px;
+    margin:0 5px;
+}
+#header a:hover{
+    color:#fff;
+    color:white;
+    border: rgb(255, 255, 255) 3px solid ;
+    border-radius:0.3em;
+}
+/*=======================================*/
+/*主導行*/
+#nav ul{
+    overflow: hidden;
+    width:;
+}
+#nav li{
+    background-color: rgb(211, 179, 135);
+    border-radius:20px 0 20px 0;
+    border:rgb(190, 160, 119) 1px solid;
+    float:left;
+    width:12%;
+    text-align:center;
+}
+#nav a{
     display:block;
-    font-family: 'Comfortaa', cursive;
+    padding:5px 0;
+    color:rgba(255,255,255,0.8);
+    font-family: 'Indie+Flower', cursive;
     font-size:2em;
+    text-align:center;
+    text-decoration:none;
 }
-#main a:hover{
-    background-color: #ffab5c;
+#nav a:hover{
+     border-radius:20px 0 20px 0;
+    background-color: #e6d0ba;
+    color:#59220d;
 }
+/*=======================================*/
+/*主要內容*/
+#content{
+    height:auto;
+}
+#main{
+    width:75%;
+    float:left;
+    padding:20px 20px;
+    background:url("../img/bg_check.png") repeat;
+    border:rgb(190, 160, 119) 1px solid;
+    border-radius:20px;
+    color:#5d5d5d;
+}
+#side{
+    background-color:rgba(201, 244, 235, 0.96);
+    border-radius:10px;
+    margin-bottom:40px;
+    width:20%;
+    float:right;
+}
+
+/*=======================================*/
+/*頁尾*/
 #footer{
     height: 300px;
 }
@@ -192,4 +208,6 @@ div{
 #date{
     width:200px;
     height:auto;
+    margin:20px 10px;
 }
+/*=======================================*/
