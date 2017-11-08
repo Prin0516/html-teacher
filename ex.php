@@ -6,8 +6,8 @@
  * Time: 上午 10:05
  */
 $a=1234;
-$m=5;
 $n=$_POST['n'];
+$m=$_POST['m'];
 $r=$_POST['r'];
 $g=$_POST['g'];
 $b=$_POST['b'];
@@ -29,6 +29,7 @@ for($i=1;$i<=$n;$i++){
 }
 echo"</table>"
 ?>
+
 
 </body>
 </html>

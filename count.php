@@ -6,10 +6,11 @@
 </head>
 <body>
 <form action="ex.php" method="post">
-    n=<input type="text" id="n" name="n">
-    r=<input type="text" id="r" name="r">
-    g=<input type="text" id="g" name="g">
-    b=<input type="text" id="b" name="b">
+    <p>n=<input type="text" id="n" name="n"></p><br>
+    <p>m=<input type="text" id="m" name="m"></p><br>
+    <p>r=<input type="text" id="r" name="r"></p><br>
+    <p>g=<input type="text" id="g" name="g"></p><br>
+    <p>b=<input type="text" id="b" name="b"></p><br>
     <input type="submit">
 </form>
 </body>
