@@ -1,19 +1,16 @@
 <meta charset="UTF-8">
-<?php //$(function() {
-//    $.get('update.php?id=1',{r:Math.random()},function(num) {
-//        $('#hit').html(num);
-//    });
-//});
-//$action=$_GET['action']; 
-//echo '<p>Hello World</p>';
-//$datei = fopen("countlog.txt","r");
-//$count = fgets($datei,1000);
-//fclose($datei);
-//$count=$count + 1 ;
-//echo "$count" ;
-//echo " hits" ;
-//echo "\n" ;
-//$datei = fopen("countlog.txt","w");
-//fwrite($datei, $count);
-//fclose($datei);
-?>
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<form action="ex.php" method="post">
+    n=<input type="text" id="n" name="n">
+    r=<input type="text" id="r" name="r">
+    g=<input type="text" id="g" name="g">
+    b=<input type="text" id="b" name="b">
+    <input type="submit">
+</form>
+</body>
+</html>
