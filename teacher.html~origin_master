@@ -18,14 +18,14 @@
         <!--<dd>3624</dd>-->
     <!--</dl>-->
     <ul>
-        <li><a href="login.php">login</a></li>
+        <li><a href="login.html">login</a></li>
     </ul>
     </header>
     </div>
 <div id="nav" class="inner">
     <ul id="gnav">
-        <li><a href="teacher.html">首頁</a></li>
-        <li><a href="teacher.html">簡歷</a></li>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="index.html">簡歷</a></li>
         <li><a href="download.html">學術</a> </li>
         <li><a href="about.html">著作</a> </li>
         <li><a href="contant.html">學生</a> </li>
