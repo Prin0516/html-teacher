@@ -23,7 +23,7 @@ echo "<table style='background-color:rgb($r,$g,$b)'>";
 for($i=1;$i<=$n;$i++){
     echo"<tr>";
     for($j=1;$j<=$m;$j++){
-        echo "<td ><span style='fonr-size:2em'>".$i*$j."</span></td>";
+        echo "<td ><span style='font-size:2em'>".$i*$j."</span></td>";
     }
     echo"</tr>";
 }
