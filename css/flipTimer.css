@@ -41,18 +41,18 @@
     -ms-transform: perspective(400px) rotateX(0deg); } }
 
 @-keyframes flipTop {
-0% {
-  transform: perspective(400px) rotateX(0deg); }
+  0% {
+    transform: perspective(400px) rotateX(0deg); }
 
-100% {
-  transform: perspective(400px) rotateX(-90deg); } }
+  100% {
+    transform: perspective(400px) rotateX(-90deg); } }
 
 @-keyframes flipBottom {
-0% {
-  transform: perspective(400px) rotateX(90deg); }
+  0% {
+    transform: perspective(400px) rotateX(90deg); }
 
-100% {
-  transform: perspective(400px) rotateX(0deg); } }
+  100% {
+    transform: perspective(400px) rotateX(0deg); } }
 
 .flipTimer {
   color: #FFF;
@@ -60,10 +60,7 @@
   font-size: 25px;
   font-weight: bold;
   line-height: 27px;
-  height:30px;
-    margin:20px;
-
-}
+  height: 30px; }
   .flipTimer .seperator {
     vertical-align: top;
     margin: 0 -20px;
