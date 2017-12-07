@@ -1,8 +1,20 @@
-<!DOCTYPE html>
+<?php session_start();
+
+//include("connect.php");
+?>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<?php
+$count=1;
+if (isset($_SESSION['username'])) {
+    include("mysql_connect.inc.php");
+    $sql = "SELECT * FROM user where id = '$id'";
+    $result = $link->query($sql);
+    $row = $result->fetch_row();
+    echo '<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>楊鎮華教授's web</title>
+    <title>楊鎮華教授\'s web</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/flipTimer.css"/>
     <link rel="stylesheet" href="css/calendar.css"><!-- Latest compiled and minified CSS -->
@@ -15,11 +27,18 @@
 </head>
 <body>
 <div id="img" class="inner">
-    <header id="header">
+    <header id="header" class="target">
         <h1>楊鎮華教授</h1>
         <ul>
-            <li class="english"><a href="">English</a></li>
-            <li class="english"><a class="login" href="login.php">login</a></li>
+            <li class="english"><a href="#">English</a></li>
+            <div class="loginlist">
+            <li ><a href="#logoutbtn" class="login">你好!' . $_SESSION[username] . '</a >
+                <ul id="logoutbtn">
+                    <li><a href="#">修改資料</a></li>
+                    <li><a href="#">登出</a></li>
+                </ul>
+            </li >  
+            </div>
         </ul>
     </header>
 </div>
@@ -38,8 +57,7 @@
         <div id="intro">
             <div class="row">
                 <div class="col-sm-8">
-                    <h2 align="center"><span style="font-size:1.5em"><strong>楊鎮華</strong></span><span
-                            style="font-size:1em;">教授</span></h2>
+                   <h2 align="center"><span style="font-size:1.5em"><strong>楊鎮華</strong></span><span style="font-size:1em;">教授</span></h2>
                     <p style="font-size:1.7em" align="center">亞洲大學講座教授兼副校長</p>
                     <p style="font-size:1.7em" align="center">國立中央大學資訊工程系特聘教授</p>
                 </div>
@@ -63,12 +81,13 @@
 
     </div>
     <div id="side">
-        <div id="date">
-            <p>行事曆</p>
-            <div id="calendar" class="calendar"></div>
-        </div>
         <div id="time">
-            <p>現在時間</p>
+            <ul id="timet">
+                <li align="center">行事曆&時間</li>
+            </ul>
+            <div id="date">
+                <div id="calendar" class="calendar"></div>
+            </div>
             <div class="flipTimer">
                 <div class="hours"></div>
                 <div class="minutes"></div>
@@ -90,12 +109,30 @@
 <!--<script src="js/jquery.min.js"></script>-->
 <script src="js/calendar.js"></script>
 
-<script>
-    $(document).ready(function () {
-        //Callback works only with direction = "down"
-        $('.flipTimer').flipTimer({direction: 'up'});
-    });
-
-</script>
+<!--<script>-->
+<!--    $(document).ready(function () {-->
+<!--        //Callback works only with direction = "down"-->
+<!--        $(\'.flipTimer\').flipTimer({direction: \'up\'});-->
+<!--    });-->
+<!---->
+<!--</script>-->
 </body>
 </html>
+';
+
+} else {
+    echo '<h1 align="center">您無權限觀看此頁面!</h1>';
+    echo '<meta http-equiv=REFRESH CONTENT=5;url=index.html>';
+}
+?>
+
+
+//            <?php
+//            if ($_SESSION[\'username\'] != null) {
+//                echo \'<li ><a href=""class="enter">你好!  " . $id. "</a></li>\';
+//            } else {
+//                echo '<li ><a href = "login.php"> login</a ></li >';
+//            }
+//            ?>
+<!--<li><a href="" class="enter">你好!'.$_SESSION[username].'</a ></li >-->
+
