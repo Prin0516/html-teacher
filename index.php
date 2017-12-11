@@ -4,7 +4,6 @@
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <?php
-$count=1;
 if (isset($_SESSION['username'])) {
     include("mysql_connect.inc.php");
     $sql = "SELECT * FROM user where id = '$id'";
@@ -13,6 +12,16 @@ if (isset($_SESSION['username'])) {
     echo '<!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+var count=0;
+function add(){
+       count=count+1;
+          if(count%2==1){
+                 document.getElementById("logoutbtn").style.display="block";
+                }else if(count%2==0){
+                 document.getElementById("logoutbtn").style.display="none";
+                }
+    }</script>
     <meta charset="UTF-8">
     <title>楊鎮華教授\'s web</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -23,7 +32,6 @@ if (isset($_SESSION['username'])) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 </head>
 <body>
 <div id="img" class="inner">
@@ -32,16 +40,17 @@ if (isset($_SESSION['username'])) {
         <ul>
             <li class="english"><a href="#">English</a></li>
             <div class="loginlist">
-            <li ><a href="#logoutbtn" class="login">你好!' . $_SESSION[username] . '</a >
-                <ul id="logoutbtn">
-                    <li><a href="#">修改資料</a></li>
-                    <li><a href="#">登出</a></li>
-                </ul>
+            <li >
+            <a a href="#" class="login" onclick="add();">你好!' . $_SESSION[username] . '</a >
             </li >  
             </div>
         </ul>
     </header>
 </div>
+  <ul id="logoutbtn">
+    <li><a href="member.php">修改資料</a></li>
+    <li><a href="logout.php">登出</a></li>
+  </ul>
 <div id="content" class="inner">
     <div id="main">
         <div id="nav">
@@ -81,13 +90,12 @@ if (isset($_SESSION['username'])) {
 
     </div>
     <div id="side">
+        <div id="date">
+            <p>行事曆</p>
+            <div id="calendar" class="calendar"></div>
+        </div>
         <div id="time">
-            <ul id="timet">
-                <li align="center">行事曆&時間</li>
-            </ul>
-            <div id="date">
-                <div id="calendar" class="calendar"></div>
-            </div>
+            <p>現在時間</p>
             <div class="flipTimer">
                 <div class="hours"></div>
                 <div class="minutes"></div>
@@ -109,13 +117,13 @@ if (isset($_SESSION['username'])) {
 <!--<script src="js/jquery.min.js"></script>-->
 <script src="js/calendar.js"></script>
 
-<!--<script>-->
-<!--    $(document).ready(function () {-->
-<!--        //Callback works only with direction = "down"-->
-<!--        $(\'.flipTimer\').flipTimer({direction: \'up\'});-->
-<!--    });-->
-<!---->
-<!--</script>-->
+<script>
+    $(document).ready(function () {
+        //Callback works only with direction = "down"
+        $(\'.flipTimer\').flipTimer({direction: \'up\'});
+    });
+</script>
+
 </body>
 </html>
 ';
@@ -127,7 +135,7 @@ if (isset($_SESSION['username'])) {
 ?>
 
 
-//            <?php
+<?php
 //            if ($_SESSION[\'username\'] != null) {
 //                echo \'<li ><a href=""class="enter">你好!  " . $id. "</a></li>\';
 //            } else {

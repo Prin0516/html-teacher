@@ -96,7 +96,7 @@ div {
 }
 
 .inner {
-    max-width:1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -109,7 +109,7 @@ div {
 /*頁頭*/
 #header {
     /*background-color: rgba(81, 255, 233, 0.46);*/
-    background-color: rgba(105, 176, 255,0.3);
+    background-color: rgba(105, 176, 255, 0.3);
     height: 300px;
     position: relative;
     margin: auto;
@@ -117,17 +117,17 @@ div {
 
 #header h1 {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 30%;
     color: rgba(255, 255, 255, 0.77);
     font-family: 'Comfortaa', cursive;
-    font-size: 300%;
-    text-shadow:1px 1px 0 #999,1px -1px 0 #999,-1px -1px 0 #999,-1px 1px 0 #999;
+    font-size: 400%;
+    text-shadow: 1px 1px 0 #999, 1px -1px 0 #999, -1px -1px 0 #999, -1px 1px 0 #999;
 }
 
 #img {
     max-width: 1140px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     background: url(../img/book.jpg) center top no-repeat;
     height: 200px;
     background-size: cover;
@@ -144,27 +144,83 @@ div {
     display: inline;
     margin: 0 10px;
 }
-#header a {
+
+#header .english a {
     color: rgba(255, 255, 255, 0.7);
     /*border: rgba(255, 255, 255, 0.6) 3px solid;*/
     /*border-radius: 0.3em;*/
     padding: 10px 10px;
     margin: 0 5px;
-    text-decoration:none;
+    text-decoration: none;
 }
-#header li:last-child a{
+
+#header .english a:hover {
+    color: #fff;
+}
+
+#header .login {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 10px 10px;
+    margin: 0 5px;
+    text-decoration: none;
     border: rgba(255, 255, 255, 0.7) 3px solid;
     border-radius: 0.3em;
+    /*position: relative;*/
 }
-#header a:hover {
+
+#header .login:hover {
     color: #fff;
-    color: white;
-    /*border: rgb(255, 255, 255) 3px solid;*/
-    /*border-radius: 0.3em;*/
-}
-#header li:last-child a:hover{
     border: rgb(255, 255, 255) 3px solid;
     border-radius: 0.3em;
+}
+
+#header .loginlist {
+    display: inline;
+    margin: 0 10px;
+}
+#logoutbtn:before{
+    content:"";
+    border:transparent 10px solid;
+    border-bottom-color:rgb(211, 188, 202);
+    position: absolute;
+    top: -20px;
+    left:10px;
+    width: 0;
+}
+#logoutbtn {
+    display: none;
+    position: absolute;
+    background-color: rgba(249, 238, 156,1);
+    /*box-shadow:0px 0px 6px 4px #282828;*/
+    box-shadow:4px 4px 5px 0px #262626;
+    min-width: 150px;
+    /*max-width:200px;*/
+    right:20px;
+    top: 90px;
+    z-index: 1;
+}
+
+#logoutbtn a {
+    display:block;
+    background-color: rgb(211, 188, 202);
+    color: rgb(116, 99, 87);
+    padding: 12px 16px;
+    font-size:1.5em;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+#logoutbtn li{
+    border-bottom: rgb(143, 107, 103) 3px solid;
+}
+#logoutbtn li:last-child{
+    border-bottom:none;
+}
+#logoutbtn a:hover{
+    /*background-color: rgba(253, 213, 173, 0.8);*/
+    /*color: rgb(243, 141, 99);*/
+    background-color: rgba(73, 38, 36, 0.8);
+    color: rgb(231, 184, 197);
 }
 /*=======================================*/
 /*主導行*/
@@ -185,15 +241,15 @@ div {
 #nav a {
     display: block;
     /*background-color: rgb(211, 179, 135);*/
-    background-color: rgba(215,180,120,1);
+    background-color: rgba(215, 180, 120, 1);
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border: rgb(162, 137, 104) 2px solid;
     border-bottom: none;
-    padding: 5px 0;
+    padding: 3px 3px;
     color: rgba(255, 255, 255, 0.8);
     font-family: 'Indie+Flower', cursive;
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     text-decoration: none;
 }
@@ -212,14 +268,16 @@ div {
 /*主要內容*/
 #content {
     height: auto;
-    padding:20px;
+    padding: 20px;
+    /*padding-bottom:80px;*/
     /*margin: -10px -30px 0 20px;*/
     /*overflow:hidden;*/
 }
+
 #main {
     width: 70%;
     float: left;
-    margin-left:10px;
+    margin-left: 10px;
     margin-bottom: 40px;
     /*background-color: black;*/
 }
@@ -228,90 +286,139 @@ div {
     padding: 20px 20px;
     /*background:url(../img/bg_check.png) repeat;*/
     border-radius: 20px;
-    border-top-left-radius:0px;
+    border-top-left-radius: 0px;
     border: rgb(190, 160, 119) 3px solid;
     /*border-top: rgb(190, 160, 119) 1px solid;*/
     /*border-right: rgb(190, 160, 119) 1px solid;*/
     /*border-left: rgb(190, 160, 119) 3px solid;*/
     /*border-bottom: rgb(190, 160, 119) 3px solid;*/
     color: #5d5d5d;
-    background-color: rgb(203, 244, 235);
+    /*background-color: rgb(203, 244, 235);*/
+    background-color: rgb(188, 229, 220);
 }
-#intro h2{
-    margin:40px 0;
+
+#intro h2 {
+    margin: 40px 0;
 }
-#intro .col-sm-8 p{
-    margin-top:20px;
+
+#intro .col-sm-8 p {
+    margin-top: 20px;
 }
-.heading{
+
+.heading {
     /*margin:10px 30px 20px;*/
-    padding-bottom:3px;
-    color:rgba(0,110,0,0.9);
-    font-size:1.2em;
-    border-bottom:2px rgba(0,110,0,0.9) solid;
+    padding-bottom: 3px;
+    color: rgba(0, 110, 0, 0.9);
+    font-size: 1.5em;
+    border-bottom: 2px rgba(0, 110, 0, 0.9) solid;
 }
-.headingbg{
-    margin:40px 30px 20px;
-    padding:10px 40px 0;
+
+.headingbg {
+    margin: 40px 30px 20px;
+    padding: 10px 40px 0;
     /*background-color: rgba(177, 166, 164,0.7);*/
-    border:1px #6eb6de dotted;
-    background:#f8ffd1;
-    border-radius:10px;
+    border: 1px #6eb6de dotted;
+    background: #f8ffd1;
+    border-radius: 10px;
 }
-#contact dt{
-    clear:left;
-    float:left;
-    width:7em;
-    padding-bottom:10px;
+
+#contact dt {
+    font-size: 1.3em;
+    clear: left;
+    float: left;
+    width: 7em;
+    padding-bottom: 10px;
 }
-#contact dd{
-    overflow:hidden;
-    padding-bottom:10px;
+
+#contact dd {
+    font-size: 1.3em;
+    overflow: hidden;
+    padding-bottom: 10px;
 }
+
 #side {
     width: 23%;
     float: right;
     margin-bottom: 40px;
 }
-#timet li{
-    padding:5px 0;
-    font-size:1.5em;
+
+/*#timet li {*/
+/*padding: 5px 0;*/
+/*font-size: 2em;*/
+/*font-family: 'Indie+Flower', cursive;*/
+/*background-color: rgba(215, 180, 120, 1);*/
+/*border-top-left-radius: 6px;*/
+/*border-top-right-radius: 6px;*/
+/*color: #ffffff;*/
+/*margin-bottom: 10px;*/
+/*border-bottom: rgb(190, 160, 119) 3px solid;*/
+/*}*/
+
+/*#time {*/
+/*background-color: rgba(201, 244, 235, 0.96);*/
+/*border-radius: 10px;*/
+/*border: rgb(190, 160, 119) 3px solid;*/
+/*margin-bottom: 40px;*/
+/*}*/
+#date {
+    padding-bottom:20px;
+    border-radius: 10px;
+    background-color: rgba(170, 198, 189, 0.96);
+    border-radius: 20px;
+    border: rgb(190, 160, 119) 3px solid;
+    margin-bottom: 20px;
+}
+#date p:first-child {
+    color:#fff;
     font-family: 'Indie+Flower', cursive;
-    background-color: rgba(215,180,120,1);
-    border-top-left-radius:6px;
-    border-top-right-radius:6px;
-    color:#ffffff;
-    margin-bottom:10px;
+    padding:5px 0;
+    font-size: 2em;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgba(215, 180, 120, 1);
     border-bottom:rgb(190, 160, 119) 3px solid;
 }
 #time{
-    background-color: rgba(201, 244, 235, 0.96);
+    border-radius: 10px;
+    /*background-color: rgba(201, 244, 235, 0.96);*/
+    background-color: rgba(170, 198, 189, 0.96);
     border-radius: 10px;
     border: rgb(190, 160, 119) 3px solid;
     margin-bottom: 40px;
 }
-.flipTimer {
+#time p:first-child{
+    color:#fff;
+    font-family: 'Indie+Flower', cursive;
+    padding:5px 0;
+    font-size: 2em;
+    text-align: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: rgba(215, 180, 120, 1);
+    border-bottom:rgb(190, 160, 119) 3px solid;
+    margin-bottom:10px;
+}
+
+.flipTimer{
     margin: 20px 20px;
     width: 100%;
 }
-#date {
-    width: 100%;
-    height: auto;
-    margin:  auto;
-}
+
 
 /*=======================================*/
 /*頁尾*/
 #footer {
-
-    padding:10px;
-    background-color: #979797;
-    color:#ffffff;
+    padding: 10px;
+    background-color: #535353;
+    color: #ffffff;
+    height: 80px;
     /*min-height:50px;*/
     /*height:auto;*/
 }
 
-#footer p{
+#footer p {
     text-align: center;
 }
+
 /*=======================================*/
