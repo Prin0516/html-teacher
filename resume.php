@@ -98,30 +98,30 @@ echo '</ul>
             </ul>
         </div>
         <div id="intro">
-            <div class="row">
-                <div class="col-sm-8">
-                <a href="modify.php">修改資料</a>
-                
-                   <h2 align="center"><span style="font-size:1.5em"><strong>' . $row1[1] . '</strong></span><span style="font-size:1em;">教授</span></h2>
-                    <p style="font-size:1.7em" align="center">亞洲大學講座教授兼副校長</p>
-                    <p style="font-size:1.7em" align="center">國立中央大學資訊工程系特聘教授</p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="img/photo.jpg"
-                         style="border:3px rgb(32,112,101) dotted; float:right;margin:30px 30px 0 0">
-                </div>
-            </div>
-            <div class="headingbg">
-                <p class="heading">聯絡方式</p>
-                <dl id="contact">
-                    <dt>電話:</dt>
-                    <dd>(04) 23323456 ext.1075 (高婉育助理)</dd>
-                    <dt>傳真:</dt>
-                    <dd>' . $row1[2] . '</dd>
-                    <dt>電子郵件:</dt>
-                    <dd>' . $row1[3] . '</dd>
-                </dl>
-            </div>
+                   <h2>學歷</h2>
+                    <p style="font-size:1.7em" >美國伊利諾大學, 芝加哥校區, 電機電腦碩士 (1993) </p>
+                    <p style="font-size:1.7em">美國伊利諾大學, 芝加哥校區, 電機電腦博士 (1995)</p>
+                    <h2>經歷</h2>
+                      <p style="font-size:1.7em" >教育部資訊及科技教育司司長</p>
+                      <p style="font-size:1.7em" >國科會(科技部)資訊教育學門召集人</p>
+                      <p style="font-size:1.7em" >國立中央大學資訊工程學系特聘教授、教授、副教授</p>
+                      <p style="font-size:1.7em" >國立中央大學校務研究辦公室主任</p>
+                      <p style="font-size:1.7em" >國立中央大學電子計算機中心主任</p>
+                      <p style="font-size:1.7em" >國立中央大學總教學中心主任</p>
+                      <p style="font-size:1.7em" >國立中央大學副教務長</p>
+                      <p style="font-size:1.7em" >行政院科技會報兼任研究員</p>
+                      <p style="font-size:1.7em" >科技部中央政府科技發展計畫審議－科技政策群組、部會署審查委員</p>
+                      <p style="font-size:1.7em" >科技部科國司「吳大猷紀念獎」審查委員</p>
+                      <p style="font-size:1.7em" >科技部政府資料開放諮詢委員</p>
+                      <p style="font-size:1.7em" >科技部工程司智慧計算學門複審委員</p>
+                      <p style="font-size:1.7em" >教育部高教司「教學創新試辦計畫」審查委員</p>
+                      <p style="font-size:1.7em" >教育部技職司「大專院校轉型輔導計畫」諮詢委員</p>
+                      <p style="font-size:1.7em" >教育部資科司「智慧生活整合性人才培育計畫」審查委員</p>
+                      <p style="font-size:1.7em" >教育部資科司「大學學習生態系統創新計畫」審查委員</p>
+                      <p style="font-size:1.7em" >教育部全國傑出通識教育教師獎審查委員 </p>
+                      <p style="font-size:1.7em" >教育部數位學習認證會審查委員</p>
+                      <p style="font-size:1.7em" >國立故宮博物院資料開放諮詢委員</p>
+     
         </div>
     </div>
     <div id="side">

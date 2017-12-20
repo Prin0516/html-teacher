@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php
 /**
  * Created by PhpStorm.
@@ -7,5 +8,6 @@
  */
 unset($_SESSION['username']);
 echo '<p align="center">登出中....</p>';
-echo '<meta http-equiv=REFRESH CONTENT=1;url=index.html>';
+echo $_SESSION['username'];
+echo '<meta http-equiv=REFRESH CONTENT=1;url=index.php>';
 ?>
