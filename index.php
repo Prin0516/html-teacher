@@ -36,7 +36,7 @@ function add(){
               var position = getPosition(elem);
                  document.getElementById("logoutbtn").style.display="block";
                   var a=(960-position.x)/960*100;
-                 document.getElementById("logoutbtn").style.right=a+10+"px";
+                 document.getElementById("logoutbtn").style.right=a+20+"px";
                 }else if(count%2==0){
                  document.getElementById("logoutbtn").style.display="none";
                 }
