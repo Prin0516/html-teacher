@@ -4,7 +4,6 @@
 include("mysql_connect.inc.php");
 $id = $_POST['id'];
 $pw = SHA1($_POST['pw']);
-
 // 从表中提取信息的sql语句
 $sql = "SELECT * FROM user where id = '$id'";
 // 执行sql查询
@@ -17,6 +16,6 @@ if ($id != null && $pw != null && $row[0] == $id && $row[2] == $pw) {
     echo '<meta http-equiv=REFRESH CONTENT=1;url=index.php>';
 } else {
     echo '<p align="center">登入失敗</p>';
-    echo '<meta http-equiv=REFRESH CONTENT=1;url=index.html>';
+    echo '<meta http-equiv=REFRESH CONTENT=1;url=index.php>';
 }
 ?>

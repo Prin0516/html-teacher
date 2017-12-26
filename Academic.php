@@ -36,7 +36,7 @@ function add(){
               var position = getPosition(elem);
                  document.getElementById("logoutbtn").style.display="block";
                   var a=(960-position.x)/960*100;
-                 document.getElementById("logoutbtn").style.right=a+20+"px";
+                 document.getElementById("logoutbtn").style.right=a+10+"px";
                 }else if(count%2==0){
                  document.getElementById("logoutbtn").style.display="none";
                 }
@@ -94,35 +94,40 @@ echo '</ul>
                 <li><a href="Academic.php" >學術</a></li>
                 <li><a href="about.php">著作</a></li>
                 <li><a href="student.php">學生</a></li>
-                <li><a href="link.php" >常用連結</a></li>
+                <li><a href="link.html" >常用連結</a></li>
             </ul>
         </div>
         <div id="intro">
-            <div class="row">
-                <div class="col-sm-8">
-                <a href="modify.php">修改資料</a>         
-                   <h2 align="center"><span style="font-size:1.5em"><strong>' . $row1[1] . '</strong></span><span style="font-size:1em;">教授</span></h2>
-                    <p style="font-size:1.7em" align="center">亞洲大學講座教授兼副校長</p>
-                    <p style="font-size:1.7em" align="center">國立中央大學資訊工程系特聘教授</p>
-                    <p style="font-size:1.7em" align="center">研究專長</p>
-                    <p style="font-size:1.7em" align="center">人工智慧、大數據、學習分析、教育雲、磨課師</p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="img/photo.jpg"
-                         style="border:3px rgb(32,112,101) dotted; float:right;margin:30px 30px 0 0">
-                </div>
-            </div>
-            <div class="headingbg">
-                <p class="heading" style="color: rgba(0, 110, 0, 0.9)">聯絡方式</p>
-                <dl id="contact">
-                    <dt>電話:</dt>
-                    <dd>(04) 23323456 ext.1075 (高婉育助理)</dd>
-                    <dt>傳真:</dt>
-                    <dd>' . $row1[2] . '</dd>
-                    <dt>電子郵件:</dt>
-                    <dd>' . $row1[3] . '</dd>
-                </dl>
-            </div>
+                   <h2>獲獎</h2>
+                    <p style="font-size:1.7em">國科會(現科技部)傑出研究獎 (2010)</p>
+                    <p style="font-size:1.7em">教育部教育專業獎章 (2015)</p>
+                    <h2>研究計畫 (科技部、教育部)</h2>
+                    <div id="admtable">
+                    <table>
+                    <thead><tr><th>計畫名稱</th><th>補助單位及編號</th><th>擔任工作</th><th style="width:95px">補助金額</th><th>起訖日期</th></tr></thead>
+                    <tr>
+                    <td>應用巨量資料於改善MOOCs學習分析之實證研究：以大學微積分為例</td>
+                    <td>科技部 MOST 106-2511-S-008-004-MY3</td>
+                    <td>主持人</td>
+                    <td>4,489,000</td>
+                    <td>2017/08/01至2020/07/31</td>
+                    </tr> 
+                    <tr>
+                    <td>應用巨量資料技術探討MOOCs學習者之課程影片關聯性分析與適性化教材推薦</td>
+                    <td>科技部 MOST 105-2511-S-008-003-MY3</td>
+                    <td>主持人</td>
+                    <td>4,286,000</td>
+                    <td>2016/08/01至2019/07/31</td>
+                    </tr>   
+                    <tr>
+                    <td>教育部專案辦公室計畫 ｢4G行動寬頻暨教育雲創新應用推動辦公室」第二期</td>
+                    <td>教育部</td>
+                    <td>主持人</td>
+                    <td>7,000,000</td>
+                    <td>2016/05/01至2017/12/31</td>
+                    </tr>
+</table>
+</div>
         </div>
     </div>
     <div id="side">
