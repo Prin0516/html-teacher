@@ -98,6 +98,7 @@ echo '</ul>
             </ul>
         </div>
         <div id="intro">
+<<<<<<< HEAD
         <div id="studentul">
         <h3>博士後研究員：</h3>
          <ul><li><p>黃信嘉(Chester)</p>
@@ -109,6 +110,32 @@ echo '</ul>
         </li>
         </ul>
         </div>
+=======
+            <div class="row">
+                <div class="col-sm-8">
+                <a href="modify.php">修改資料</a>
+                
+                   <h2 align="center"><span style="font-size:1.5em"><strong>' . $row1[1] . '</strong></span><span style="font-size:1em;">教授</span></h2>
+                    <p style="font-size:1.7em" align="center">亞洲大學講座教授兼副校長</p>
+                    <p style="font-size:1.7em" align="center">國立中央大學資訊工程系特聘教授</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/photo.jpg"
+                         style="border:3px rgb(32,112,101) dotted; float:right;margin:30px 30px 0 0">
+                </div>
+            </div>
+            <div class="headingbg">
+                <p class="heading">聯絡方式</p>
+                <dl id="contact">
+                    <dt>電話:</dt>
+                    <dd>(04) 23323456 ext.1075 (高婉育助理)</dd>
+                    <dt>傳真:</dt>
+                    <dd>' . $row1[2] . '</dd>
+                    <dt>電子郵件:</dt>
+                    <dd>' . $row1[3] . '</dd>
+                </dl>
+            </div>
+>>>>>>> origin/master
         </div>
     </div>
     <div id="side">

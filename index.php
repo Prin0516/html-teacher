@@ -113,7 +113,7 @@ echo '</ul>
                 </div>
             </div>
             <div class="headingbg">
-                <p class="heading" style="color: rgba(0, 110, 0, 0.9)">聯絡方式</p>
+                <p class="heading">聯絡方式</p>
                 <dl id="contact">
                     <dt>電話:</dt>
                     <dd>(04) 23323456 ext.1075 (高婉育助理)</dd>

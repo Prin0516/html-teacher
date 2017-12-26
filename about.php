@@ -98,6 +98,7 @@ echo '</ul>
             </ul>
         </div>
         <div id="intro">
+<<<<<<< HEAD
                    <h2 align="center">期刊論文 (SCI/SSCI)</h2>
                    <div id="about">
                     <table>
@@ -226,6 +227,23 @@ echo '</ul>
                       </tbody>
                       </table>
                       </div>
+=======
+                <a href="modify.php">修改資料</a>
+                   <h2>期刊論文 (SCI/SSCI)</h2>
+                    <ul style="font-size:1.7em;list-style: outside;">2017</ul>
+                    <li style="font-size:1em;list-style:none;">1.Huang, C.S.J., Su, A.Y.S., Yang, S.J.H.*, Liou, H.H. (2017). A collaborative digital pen learning approach to improving students\' learning achievement and motivation in Mathematics courses. Computers & Education, 107(2017), 31-44. (SSCI, IF: 2.881)</li>
+            <div class="headingbg">
+                <p class="heading">聯絡方式</p>
+                <dl id="contact">
+                    <dt>電話:</dt>
+                    <dd>(04) 23323456 ext.1075 (高婉育助理)</dd>
+                    <dt>傳真:</dt>
+                    <dd>' . $row1[2] . '</dd>
+                    <dt>電子郵件:</dt>
+                    <dd>' . $row1[3] . '</dd>
+                </dl>
+            </div>
+>>>>>>> origin/master
         </div>
     </div>
     <div id="side">

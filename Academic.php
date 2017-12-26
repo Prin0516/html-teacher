@@ -98,6 +98,7 @@ echo '</ul>
             </ul>
         </div>
         <div id="intro">
+<<<<<<< HEAD
                    <h2>獲獎</h2>
                     <p style="font-size:1.7em">國科會(現科技部)傑出研究獎 (2010)</p>
                     <p style="font-size:1.7em">教育部教育專業獎章 (2015)</p>
@@ -128,6 +129,14 @@ echo '</ul>
                     </tr>
 </table>
 </div>
+=======
+                   <h2 >獲獎</h2>
+                    <p style="font-size:1.7em">國科會(現科技部)傑出研究獎 (2010)</p>
+                    <p style="font-size:1.7em">教育部教育專業獎章 (2015)</p>
+            <div class="headingbg">
+                <p class="heading">研究計畫 (科技部、教育部)</p>
+            </div>
+>>>>>>> origin/master
         </div>
     </div>
     <div id="side">
