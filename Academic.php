@@ -28,15 +28,30 @@ while(element) {
 }
   return { x: x, y: y };
 }
+$(document).ready(function(){
+$(window).resize( {
+       var x = 0;
+  var y = 0;
+while(element) {
+    x += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+    y += (element.offsetTop - element.scrollTop + element.clientTop);
+    element = element.offsetParent;
+}
+  return { x: x, y: y };
+          var a=(1920-position.x)/1920*100;
+                 document.getElementById("logoutbtn").style.right=a+"px";
+});
+});
 var count=0;
+
 function add(){
        count=count+1;
           if(count%2==1){
               var elem = document.getElementById("hi");
               var position = getPosition(elem);
                  document.getElementById("logoutbtn").style.display="block";
-                  var a=(960-position.x)/960*100;
-                 document.getElementById("logoutbtn").style.right=a+10+"px";
+                  var a=(1920-position.x)/1920*100;
+                 document.getElementById("logoutbtn").style.right=a+"px";
                 }else if(count%2==0){
                  document.getElementById("logoutbtn").style.display="none";
                 }
@@ -51,9 +66,6 @@ function add(){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
@@ -67,7 +79,7 @@ function add(){
 if (isset($_SESSION['username'])) {
     echo '<div class="loginlist">
             <li >
-                <a href="#" class="login" id="hi"onclick="add();">你好!' . $row[0] . '</a >
+                <a href="#" class="login" id="hi"onclick="add();">Hi !   ' . $row[0] . '</a >
             </li >  
             <script>var elem = document.getElementById("hi");
             var position = getPosition(elem);
@@ -98,10 +110,9 @@ echo '</ul>
             </ul>
         </div>
         <div id="intro">
-<<<<<<< HEAD
                    <h2>獲獎</h2>
                     <p style="font-size:1.7em">國科會(現科技部)傑出研究獎 (2010)</p>
-                    <p style="font-size:1.7em">教育部教育專業獎章 (2015)</p>
+                    <p style="font-size:1.7em; margin-bottom: 50px;">教育部教育專業獎章 (2015)</p>
                     <h2>研究計畫 (科技部、教育部)</h2>
                     <div id="admtable">
                     <table>
@@ -127,16 +138,8 @@ echo '</ul>
                     <td>7,000,000</td>
                     <td>2016/05/01至2017/12/31</td>
                     </tr>
-</table>
-</div>
-=======
-                   <h2 >獲獎</h2>
-                    <p style="font-size:1.7em">國科會(現科技部)傑出研究獎 (2010)</p>
-                    <p style="font-size:1.7em">教育部教育專業獎章 (2015)</p>
-            <div class="headingbg">
-                <p class="heading">研究計畫 (科技部、教育部)</p>
-            </div>
->>>>>>> origin/master
+                    </table>
+                    </div>
         </div>
     </div>
     <div id="side">

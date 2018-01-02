@@ -67,7 +67,7 @@ function add(){
 if (isset($_SESSION['username'])) {
     echo '<div class="loginlist">
             <li >
-                <a href="#" class="login" id="hi"onclick="add();">你好!' . $row[0] . '</a >
+                <a href="#" class="login" id="hi"onclick="add();">Hi !   ' . $row[1] . '</a >
             </li >  
             <script>var elem = document.getElementById("hi");
             var position = getPosition(elem);
@@ -99,13 +99,22 @@ echo '</ul>
         </div>
         <div id="intro">
             <div class="row">
-                <div class="col-sm-8">
-                <a href="modify.php">修改資料</a>         
-                   <h2 align="center"><span style="font-size:1.5em"><strong>' . $row1[1] . '</strong></span><span style="font-size:1em;">教授</span></h2>
-                    <p style="font-size:1.7em" align="center">亞洲大學講座教授兼副校長</p>
-                    <p style="font-size:1.7em" align="center">國立中央大學資訊工程系特聘教授</p>
-                    <p style="font-size:1.7em" align="center">研究專長</p>
-                    <p style="font-size:1.7em" align="center">人工智慧、大數據、學習分析、教育雲、磨課師</p>
+                <div class="col-sm-8">';
+if (isset($_SESSION['username'])) {
+    echo '<form name="form" method="post" action="modify.php">
+    名字:<input type="text" name="name" value="楊振華"><br>
+    電話:<input type="text" name="phone" value="
+0423316699"><br>
+    email:<input type="text" name="email" value="
+jhyang@asia.edu.tw"><br>
+    <input type="submit" name="button" value="修改"/>
+</form>';
+}
+echo '<h2 align="center"><span style="font-size:1.5em"><strong>' . $row1[1] . '</strong></span><span style="font-size:1em;">教授</span></h2>
+                    <p style="font-size:2em" align="center">亞洲大學講座教授兼副校長</p>
+                    <p style="font-size:2em" align="center">國立中央大學資訊工程系特聘教授</p>
+                    <p style="font-size:2em" align="center">研究專長</p>
+                    <p style="font-size:2em" align="center">人工智慧、大數據、學習分析、教育雲、磨課師</p>
                 </div>
                 <div class="col-sm-4">
                     <img src="img/photo.jpg"
@@ -113,7 +122,7 @@ echo '</ul>
                 </div>
             </div>
             <div class="headingbg">
-                <p class="heading">聯絡方式</p>
+                <p class="heading" style="color: rgba(0, 110, 0, 0.9);">聯絡方式</p>
                 <dl id="contact">
                     <dt>電話:</dt>
                     <dd>(04) 23323456 ext.1075 (高婉育助理)</dd>
@@ -132,7 +141,7 @@ echo '</ul>
         </div>
         <div id="time">
             <p>現在時間</p>
-            <div class="flipTimer">
+            <div class="flipTimer"align="center">
                 <div class="hours"></div>
                 <div class="minutes"></div>
                 <div class="seconds"></div>

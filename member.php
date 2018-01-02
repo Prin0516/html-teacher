@@ -1,27 +1,25 @@
 <?php session_start();?>
-/**
- * Created by PhpStorm.
- * User: USER
- * Date: 2017/11/22
- * Time: 上午 11:25
- */
 <meta http-equiv="Content-Type" content="text/html";charset="utf-8"/>
 <?php
 include("mysql_connect.inc.php");
-echo'<a href="logout.php">登出</a> <br><br>';
-if($_SESSION['username']!=null)
-{
-    echo'<a href="register.php">新增</a>';
-    echo'<a href="update.php">修改</a>';
-    echo'<a href="delete.php">刪除</a>';
-
-    $sql="SELECT*FROM member_table";
-    $result=mysql_query($sql);
-    while($row=mysql_fetch_row($result)){
-        echo"$row[0]- 名字(帳號):$row[1],"."電話:$row[3],地址:$row[4],備註:$row[5]<br>";
-    }
-}else{
-    echo '您無權限觀看此頁面!';
-    echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';
+if (isset($_SESSION['username'])) {
+    $sql = "SELECT * FROM user where id = '$_SESSION[username]'";
+    $result = $link->query($sql);
+    $row = $result->fetch_row();
 }
+    echo'
+    <html>
+    <head></head>
+    <body>
+    <form name="form" method="post" action="usermodify.php">
+    名字:<input type="text" name="username" value="'.$row[1].'"><br>
+    密碼:<input type="password" name="userpw" ><br>
+    email:<input type="text" name="useremail" value="'.$row[3].'"><br>
+    phone:<input type="text"name="userphone" value="'.$row[4].'"><br>
+    <input type="submit"name="button" value="修改" >
+</form>
+</body>
+    </html>
+    ';
+
 ?>
