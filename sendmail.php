@@ -2,12 +2,20 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+<<<<<<< HEAD
 require 'vendor/autoload.php';
+=======
+require 'mail/vendor/autoload.php';
+>>>>>>> origin/master
 
 $mail = new PHPMailer(true);
 try {
     //Server settings
+<<<<<<< HEAD
     $mail->SMTPDebug = 2;
+=======
+    $mail->SMTPDebug =0;
+>>>>>>> origin/master
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
@@ -20,9 +28,15 @@ try {
     $mail->setFrom('sender@example.com', 'Admin');
     $mail->addAddress('recipient1@example.net', 'Recipient1');
     $mail->addAddress('recipient2@example.com');
+<<<<<<< HEAD
     $mail->addReplyTo('noreply@example.com', 'noreply');
     $mail->addCC('cc@example.com');
     $mail->addBCC('bcc@example.com');
+=======
+//    $mail->addReplyTo('noreply@example.com', 'noreply');
+//    $mail->addCC('cc@example.com');
+//    $mail->addBCC('bcc@example.com');
+>>>>>>> origin/master
 
     //Attachments
     $mail->addAttachment('/backup/myfile.tar.gz');
