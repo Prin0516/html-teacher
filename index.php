@@ -36,7 +36,7 @@ function add(){
               var position = getPosition(elem);
                  document.getElementById("logoutbtn").style.display="block";
                   var a=(960-position.x)/960*100;
-                 document.getElementById("logoutbtn").style.right=a+20+"px";
+                 document.getElementById("logoutbtn").style.right=a+30+"px";
                 }else if(count%2==0){
                  document.getElementById("logoutbtn").style.display="none";
                 }
@@ -49,11 +49,11 @@ function add(){
     <link rel="stylesheet" href="css/flipTimer.css"/>
     <link rel="stylesheet" href="css/calendar.css"><!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
